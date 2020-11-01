@@ -14,8 +14,8 @@ main(parse(Deno.args) as Args);
 async function main(args: Args) {
     if (args.h || args.help) {
         console.log(`USAGE:
-    cat file.txt > deno run --allow-read https://deno.land/x/replace/mod.ts -p "pattern" -s "replacement string"
-    cat file.txt > deno run --allow-read https://deno.land/x/replace/mod.ts -p "pattern" -f path/to/replacement.txt
+    cat file.txt > deno run --allow-read https://deno.land/x/replace/cli.ts -p "pattern" -s "replacement string"
+    cat file.txt > deno run --allow-read https://deno.land/x/replace/cli.ts -p "pattern" -f path/to/replacement.txt
 `);
         return;
     }
